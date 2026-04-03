@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(231, 236, 235);
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40px;    
+   
+    
+}
+
+.titulo1{
+    font-size: 20px;
+}
+
+.titulo2{
+    font-size: 30px;
+    color: rgb(87, 128, 87);
+}
+
+.titulo3{
+    font-size: 13px;
+    color: gray;
+}
+
+.contenedor{
+    height: auto;
+    width: 30%;
+}
+
+
+
+.contenedorcaja{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+}
+
+
+.caja{
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    height: 850px;
+}
+
+
+.contenedorimg{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    
+}
+
+
+
+
+label{
+    font-size: 12px;
+    padding: 6px  25px ;
+    display: flex;
+    
+}
+
+.input{
+    position: relative;
+    width: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+
+}
+
+.icon1{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    height: 20px;
+}
+
+.icon2{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    height: 20px;
+}
+
+.icon3{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    height: 20px;
+    
+}
+
+.icon4{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    height: 20px;
+}
+
+input{
+    width: 90%;
+    padding: 18px;
+    padding-left: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid green;
+}
+
+.select{
+    display: flex;
+    justify-content: space-around;
+}
+
+.select1{
+    background-color: white;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    outline: none;
+}
+
+.select1:focus{
+    border: 2px solid green;
+}
+
+.botonc{
+    background-color: #4B755A;
+    border: 1px solid rgb(12, 20, 12);
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    padding: 15px;
+    margin-top: 14px;
+    border: 1px solid rgb(41, 112, 5);
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scaleY(1.1);
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.contenedorterminos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.terminosenlace{
+    text-decoration: none;
+}
+
+
+
+/* zona responsive */
+
+/* celulares */
+@media (max-width:600px){
+
+body{
+    background-color: #303d35;
+}
+.contenedor{
+    width: 95%;
+}
+
+.icon1,.icon2,.icon3,.icon4{
+    left: 15px;
+}
+
+.caja{
+    width: 100%;
+   padding: 38px;
+   height: 800px;
+}
+
+input{
+    width:100%;
+}
+
+.select{
+    gap: 10px;
+}
+
+.select1{
+    width: 100%;
+}
+.botonc
+{
+    width:100%;
+}
+
+label{
+    padding:6px 10px;
+}
+
+.contenedorimg{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    
+}
+
+}
+
+/* tablets */
+@media (min-width:601px) and (max-width:900px){
+
+.contenedor{
+    width:60%;
+}
+
+}
+
+
+
+
