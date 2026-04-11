@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(231, 236, 235);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 45px;
+    border-radius: 50%;
+}
+
+.titulo1 {
+    color: rgb(87, 128, 87);
+}
+
+.caja {
+    height: 850px;
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+.contenedorimg {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.contenedor {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.contenedorcaja {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+}
+
+label {
+    display: flex;
+    padding: 6px 25px;
+}
+
+input {
+    width: 90%;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid green;
+}
+
+.botonc {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 90%;
+    padding: 18px;
+    margin-top: 40px;
+    border: 1px solid rgb(39, 34, 34);
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(16, 18, 16);
+    cursor: pointer;
+    transform: scaleY(1.1);
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.enlace {
+    color: gray;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.conteenlace {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    color: gray;
+    padding: 1px 29px;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.separador span {
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+.contenedorbotones {
+    margin-top: 20px;
+}
+
+.botongoogle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto 8px;
+}
+.botonapple {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto 8px;
+}
+
+.goo{
+    position: absolute;
+    top: 15px;
+    left: 46px;
+    width: 20px;
+    height: 20px;
+    z-index: 11;
+}
+.Aplee {
+    position: absolute;
+    top: 15px;
+    left: 46px;
+    width: 20px;
+    height: 20px;
+    z-index: 11;
+}
+
+.btmgoogle{
+    background-color: #EEEEEE;
+    border: 1px solid white;
+    color: black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 6px;
+}
+
+.btmapple {
+    background-color: #EEEEEE;
+    border: 1px solid white;
+    color: black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 6px;
+}
+
+.btmgoogle:hover {
+    background-color: #d5d1d1;
+}
+.btmapple:hover {
+    background-color: #d5d1d1;
+}
+
+.contenedorterminos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 70px;
+    padding: 10px;
+    margin: 12px;
+    font-size: 20px;
+}
+
+.terminosenlace {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.crearcuenta {
+    background-color: #4B755A;
+    border: 1px solid green;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+    color: white;
+}
+
+.crearcuenta:hover {
+    background-color: rgb(49, 81, 1);
+}
+
+.contenedorcrear {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    body{
+       background-color: #303d35;
+    }
+    
+    .contenedor {
+        width: 100%;
+    }
+
+    .caja {
+        padding: 20px;
+    }
+
+    input{
+        width: 90%;
+    }
+    .botonc{
+        width: 90%;
+    }
+    .btmgoogle{
+        width: 100%;
+    }
+    .btmapple {
+        width: 100%;
+    }
+
+    label {
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .contenedor {
+        width: 60%;
+    }
+}
